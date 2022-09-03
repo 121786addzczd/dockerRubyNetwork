@@ -12,6 +12,6 @@ insert into tasks (title) values
 ('フロントエンドの実装'),
 ('バックエンドの実装');
 
-create user 'myuser'@'%' identified by 'password';
+create user 'myuser'@'%' identified with mysql_native_password by 'password';
 
 grant select,insert,update,delete on mydb.* to 'myuser'@'%';

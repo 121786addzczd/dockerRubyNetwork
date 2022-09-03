@@ -46,7 +46,7 @@ end
 
 def connect
   Mysql2::Client.new(
-    :host => "my-db",
+    :host => "mysql",
     :database => "mydb",
     :username => "myuser",
     :password => "password",
